@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/created-by: markdown-view
   name: markdownview-sample
 spec:
-  spec:
     markdowns:
       SUMMARY.md: |
         # Summary

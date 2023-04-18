@@ -56,10 +56,8 @@ spec:
                 format: int32
                 type: integer
               viewerImage:
-                additionalProperties:
-                  type: string
                 description: ViewerImage is the image name of the viewer.
-                type: object
+                type: string
             type: object
           status:
             description: MarkdownViewStatus defines the observed state of MarkdownView
