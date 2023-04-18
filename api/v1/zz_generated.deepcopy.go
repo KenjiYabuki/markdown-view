@@ -93,13 +93,6 @@ func (in *MarkdownViewSpec) DeepCopyInto(out *MarkdownViewSpec) {
 			(*out)[key] = val
 		}
 	}
-	if in.Replicas != nil {
-		in, out := &in.Replicas, &out.Replicas
-		*out = make(map[string]int32, len(*in))
-		for key, val := range *in {
-			(*out)[key] = val
-		}
-	}
 	if in.ViewerImage != nil {
 		in, out := &in.ViewerImage, &out.ViewerImage
 		*out = make(map[string]string, len(*in))

@@ -51,12 +51,10 @@ spec:
                 minProperties: 1
                 type: object
               replicas:
-                additionalProperties:
-                  format: int32
-                  type: integer
                 default: 1
                 description: Replicas is the number of viewers.
-                type: object
+                format: int32
+                type: integer
               viewerImage:
                 additionalProperties:
                   type: string

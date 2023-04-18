@@ -34,7 +34,7 @@ type MarkdownViewSpec struct {
 	// Replicas is the number of viewers.
 	// +kubebuilder:default=1
 	// +optional
-	Replicas map[string]int32 `json:"replicas,omitempty"`
+	Replicas int32 `json:"replicas,omitempty"`
 	// ViewerImage is the image name of the viewer.
 	// +optional
 	ViewerImage map[string]string `json:"viewerImage,omitempty"`
